@@ -15,7 +15,6 @@
 // int result = remainder2 / 10;
 // if (number > 99 && number < 1000) Console.WriteLine(result);
 // else Console.WriteLine($"{number} не является трехзначным числом");
-// мудреный метод, более оптимальный в разработке...
 
 Console.WriteLine("Введите любое трехзначное число");
 int number = Convert.ToInt32(Console.ReadLine());

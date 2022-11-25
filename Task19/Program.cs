@@ -9,13 +9,13 @@
 
 string Palindrome(int num)
 {
-int num1 = num / 10000;
-int num2 = num / 1000 % 10;
-int num4 = num / 10 % 10;
-int num5 = num % 10;
-if (num1 == num5 & num2 == num4)
-return ($"{num} является палиндромом");
-else return ($"{num} не является палиндромом");
+    int num1 = num / 10000;
+    int num2 = num / 1000 % 10;
+    int num4 = num / 10 % 10;
+    int num5 = num % 10;
+    if (num1 == num5 & num2 == num4)
+        return ($"{num} является палиндромом");
+    else return ($"{num} не является палиндромом");
 }
 
 Console.WriteLine ("Введите натуральное пятизначное число");

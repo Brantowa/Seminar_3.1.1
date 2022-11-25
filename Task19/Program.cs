@@ -1,0 +1,26 @@
+﻿
+// Напишите программу, которая 
+// 1. принимает на вход пятизначное число 
+// 2. проверяе, является ли оно палиндромом
+// Выполнить с помощью числовых операций (целочисленное деление, остаток от деления).
+// 14212 -> нет
+// 12821 -> да
+// 23432 -> да
+
+string Palindrome(int num)
+{
+int num1 = num / 10000;
+int num2 = num / 1000 % 10;
+int num4 = num / 10 % 10;
+int num5 = num % 10;
+if (num1 == num5 & num2 == num4)
+return ($"{num} является палиндромом");
+else return ($"{num} не является палиндромом");
+}
+
+Console.WriteLine ("Введите натуральное пятизначное число");
+int number = Convert.ToInt32(Console.ReadLine());
+string result = Palindrome (number);
+if (number > 9999 & number < 100000)
+Console.WriteLine (result);
+else Console.WriteLine ("Число не является натуральным пятизначным");

@@ -35,7 +35,7 @@ void PrintMatrix(int[,] matrix)
     }
 }
 
-void ResultMatrix(int[,] matrix)
+void Average(int[,] matrix)
 {
     for (int j = 0; j < matrix.GetLength(1); j++)
     {
@@ -52,4 +52,4 @@ void ResultMatrix(int[,] matrix)
 }
 int[,] arrayres = CreateMatrixRndInt(3, 4, -10, 10);
 PrintMatrix(arrayres);
-ResultMatrix(arrayres);
+Average(arrayres);
